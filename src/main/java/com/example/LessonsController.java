@@ -21,9 +21,41 @@ public class LessonsController {
         return this.repository.findAll();
     }
 
+    @GetMapping("/{id}")
+    public Lesson specificLesson(@PathVariable String id) {
+        Long lessonId = Long.parseLong(id);
+        return this.repository.findOne(lessonId);
+    }
+
+    @PatchMapping("/{id}")
+    public Lesson update1(@PathVariable String id, @RequestBody Lesson lesson) {
+        Long lessonId = Long.parseLong(id);
+        Lesson update = repository.findOne(lessonId);
+        update.setId(lesson.getId());
+        update.setTitle(lesson.getTitle());
+        return  this.repository.save(update);
+    }
+
+
+    @DeleteMapping("/{id}")
+    public Iterable<Lesson> delete(@PathVariable String id) {
+        Long lessonId = Long.parseLong(id);
+        repository.delete(lessonId);
+        return this.repository.findAll();
+
+    }
+
+    @RequestMapping(consumes = "application/json")
     @PostMapping("")
-    public Lesson create(@RequestBody Lesson lesson) {
-        return this.repository.save(lesson);
+    public @ResponseBody
+    String createLesson(@RequestBody Lesson lesson) {
+
+        Lesson newLesson = new Lesson();
+        newLesson.setId(lesson.getId());
+        newLesson.setTitle(lesson.getTitle());
+        this.repository.save(newLesson);
+
+        return "Lesson has been added to database";
     }
 
 }
