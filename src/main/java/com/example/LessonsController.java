@@ -47,15 +47,14 @@ public class LessonsController {
 
     @RequestMapping(consumes = "application/json")
     @PostMapping("")
-    public @ResponseBody
-    String createLesson(@RequestBody Lesson lesson) {
+    public Lesson  createLesson(@RequestBody Lesson lesson) {
 
         Lesson newLesson = new Lesson();
         newLesson.setId(lesson.getId());
         newLesson.setTitle(lesson.getTitle());
         this.repository.save(newLesson);
 
-        return "Lesson has been added to database";
+        return newLesson;
     }
 
 }
