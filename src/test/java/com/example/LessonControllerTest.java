@@ -19,6 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 import static org.hamcrest.core.IsInstanceOf.instanceOf;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -41,6 +42,21 @@ public class LessonControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content("{\"id\": \"16\"}")
                 .content("{\"title\": \"sping boot JPA Post test\"}")
+                ;
+
+        this.mvc.perform(request)
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id", instanceOf(Number.class) ));
+    }
+
+    @Test
+    @Transactional
+    @Rollback
+    public void testPatch() throws Exception {
+        MockHttpServletRequestBuilder request = patch("/lessons/5")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"id\": \"5\"}")
+                .content("{\"title\": \"JPA 5 updated by testcase\"}")
                 ;
 
         this.mvc.perform(request)
