@@ -60,8 +60,7 @@ public class LessonControllerTest {
                 ;
 
         this.mvc.perform(request)
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.id", instanceOf(Number.class) ));
+                .andExpect(status().isOk());
     }
 
     @Test

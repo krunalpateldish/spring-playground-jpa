@@ -36,8 +36,8 @@
       <file leaf-file-name="LessonControllerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/LessonControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="55" column="48" lean-forward="false" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+            <state relative-caret-position="169">
+              <caret line="62" column="44" lean-forward="false" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1332,7 +1332,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491970532608</updated>
-      <workItem from="1491970536583" duration="24831000" />
+      <workItem from="1491970536583" duration="24920000" />
     </task>
     <servers />
   </component>
@@ -1369,7 +1369,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24831000" />
+    <option name="totallyTimeSpent" value="24920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="15" y="23" width="1400" height="763" extended-state="0" />
@@ -1458,13 +1458,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/LessonControllerTest.java</url>
-          <line>71</line>
+          <line>70</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/LessonControllerTest.java</url>
-          <line>72</line>
+          <line>71</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
@@ -1488,19 +1488,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/LessonControllerTest.java</url>
-          <line>70</line>
+          <line>69</line>
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/LessonControllerTest.java</url>
-          <line>66</line>
+          <line>65</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/LessonControllerTest.java</url>
-          <line>80</line>
+          <line>79</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
@@ -1521,12 +1521,6 @@
           <line>62</line>
           <properties />
           <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/example/LessonControllerTest.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/example/LessonControllerTest.java</url>
@@ -1825,8 +1819,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/LessonControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="55" column="48" lean-forward="false" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+        <state relative-caret-position="169">
+          <caret line="62" column="44" lean-forward="false" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
